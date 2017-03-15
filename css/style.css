@@ -35,3 +35,29 @@ body {
 #header .container-fluid .row .name {
   padding: 32% 71% 14% 7%;
 }
+#features {
+  background: #a2ca28;
+}
+#features .container {
+  padding-top: 110px;
+}
+#features .container .row .box {
+  color: white;
+  margin-bottom: 118px;
+}
+#features .container .row .box h2 {
+  padding: 20px 0 27px 0;
+}
+#features .container .row .box img {
+  margin-bottom: 23px;
+  color: red;
+}
+#features .container .row .box p {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 27px;
+}
+#features .container .row .box a {
+  text-decoration: none;
+  color: white;
+}
