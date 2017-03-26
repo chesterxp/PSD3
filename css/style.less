@@ -1,86 +1,776 @@
+//--------------reset CSS--------------------//
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-	font-size: 20px;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+//--------------//reset CSS--------------------//
+
+
+
+body {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 //--------------------------------Header----------------------------------------//
 #header {
-	background: url(/img/Layer%2025.jpg) no-repeat center center;
-	background-size: cover;
-	height: 100%;
-	.container-fluid {
-		.row {
-			.nav {
-				padding: 60px 50px;
-				.logo {
-					display: inline-block;
-					img {}
-				}
-				.menu {
-					float: right;
-					ul {
-						list-style-type: none;
-						a {
-							font-size: 1em;
-							li {
-								display: inline-block;
-								color: white;
-								padding: 10px 30px;
-								text-transform: uppercase;
-								font-weight: bold;
-								&:hover {
-									color: #313030;
-								}
-							}
-						}
-					}
-				}
-			}
-			.name {
-				padding: 32% 71% 14% 7%;
-			}
-		}
-	}
+  background: url(/img/Layer%2025.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  .menu {
+      .nav {
+        padding: 60px 50px;
+        .logo {
+          display: inline-block;
+        }
+        .links {
+          float: right;
+          ul {
+            list-style-type: none;
+            a {
+              font-size: .8em;
+              li {
+                display: inline-block;
+                color: white;
+                padding: 10px 25px;
+                text-transform: uppercase;
+                
+                &:hover {
+                  color: #a2ca28;
+                }
+              }
+            }
+          }
+        }
+      }
+      .name {
+        padding: 32% 71% 14% 7%;
+      }
+    }
 }
 
 //-------------------------------//Header---------------------------------------//
 //--------------------------------features----------------------------------------//
 #features {
-	background: #a2ca28;
-	.container {
-		padding-top: 110px;
-		.row {
-			.box {
-				color: white;
-				margin-bottom: 118px;
-				h2{
-					
-					padding: 20px 0 27px 0;
-				}
-				img {
-					margin-bottom: 23px;
-					color: red;
-				}
-				p {
-					font-size: 18px;
-					line-height: 30px;
-					margin-bottom: 27px;
-				}
-				a {
-					text-decoration: none;
-					color: white;
-				}
-			}
-		}
-	}
-}
+  background: #a2ca28;
+  padding: 120px 0;
+  .block1 {
+    width: 80%;
+    margin: 0 auto;
+    .box {
+      color: white;
+      width: 25%;
+      float: left;
+      padding: 25px;
+      box-sizing: border-box;
+      text-align: center;
+      h2 {
+        padding: 15px 0;
+        font-weight: bold;
+      }
+      img {
+        min-height: 40px;
+      }
+      p {
+        font-size: 0.8em;
+        line-height: 1.5em;
+        margin-bottom: 30px;
+        
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        &:hover {
+          color:#ded0d0;
+          span {
+            color:#ded0d0;
+            position: relative;
+            left: 1em;
+          }
+        }
+        span {
+          color: white;
+        }
+      }
+    }
+    .clear {
+      clear: both;
+    }
+  }
+    }
 //-------------------------------//features---------------------------------------//
-//--------------------------------Others----------------------------------------//
-//-------------------------------//Others---------------------------------------//
-//--------------------------------photo----------------------------------------//
-//-------------------------------//photo---------------------------------------//
+//--------------------------------photos----------------------------------------//
+#photos {
+  text-align: center;
+  
+  .photoBlock1 {
+    background: #a2ca28!important;
+    .bg1{
+    width: 80%;
+    margin: 0 auto;
+    .smallBox {
+      width: 33%;
+      height: 330px;
+      float: left;
+    }
+    .bigBox {
+      width: 67%;
+      height: 330px;
+      float: left;
+    }
+    .box1, .box4 {
+      background: white;
+      padding: 40px;
+      text-align: center;
+      height: 400px;
+      h4,
+      h2 {
+        text-transform: uppercase;
+      }
+      h4 {
+        color: #fd634e;
+        font-size: 0.8em;
+        padding: 10px 0;
+        font-weight: bold;
+      }
+      h2 {
+        color: #a2ca28;
+        font-size: 1.5em;
+        
+      }
+      p {
+        color: #656e74;
+        font-size: 0.8em;
+        line-height: 1.5em;
+      }
+      a {
+        color: #9ece41;
+        text-decoration: none;
+        font-size: 0.7em;
+        padding: 15px;
+        font-weight: bold;
+        display: block;
+        &:hover {
+          color: #577124;
+          text-shadow: 0 0 20px #577124;
+        }
+      }
+      img{
+        padding: 1em;
+      }
+    }
+    .box2 {
+      background: url(/img/Layer%2026.png) no-repeat center center;
+      background-size: cover;
+      width: 67%;
+      height: 400px;
+      float: left;
+      .sign {
+        position: relative;
+        top: 300px;
+        img {
+          padding: 0.5em;
+          margin-right: 2em;
+          ;
+          float: right;
+        }
+        p {
+          color: #f7614c;
+          font-weight: bold;
+          float: right;
+          padding: 0.9em;
+          font-size: 0.8em;
+          span {
+            color: white;
+          }
+        }
+      }
+    }
+    .box3 {
+      background: url(/img/Layer%2028.png) no-repeat center center;
+      background-size: cover;
+      width: 67%;
+      height: 400px;
+      float: left;
+      .sign {
+        color: #ffffff;
+        position: relative;
+        top: 300px;
+        left: 50px;
+        p {
+          float: left;
+          padding: 18px;
+          font-size: 0.8em;
+        }
+        img {
+          float: left;
+          padding: 10px;
+        }
+      }
+    }
+      .clear{
+        clear: both;
+      }
+  }
+  }
+   .photoBlock2{
+     background: #fd634e!important;
+     .bg2{
+    width: 80%;
+    margin: 0 auto;
+    .smallBox {
+      width: 33%;
+      height: 330px;
+      float: left;
+    }
+    .bigBox {
+      width: 67%;
+      height: 330px;
+      float: left;
+    }   
+    .box5 {
+      background: url(/img/Layer%2027.png) no-repeat center center;
+      background-size: cover;
+    }
+    .box6 {
+      background: url(/img/Layer%2029.png) no-repeat center top;
+      background-size: cover;
+      .data {
+        #date,
+        #info {
+          text-transform: uppercase;
+          color: #ffffff;
+          padding: 50px 40px;
+        }
+        #date {
+          float: left;
+        }
+        #info {
+          float: right;
+        }
+      }
+    }
+    .box7 {
+      background: white;
+      padding: 40px;
+      text-align: center;
+      height: 330px;
+      h4,
+      h2 {
+        text-transform: uppercase;
+      }
+      h4 {
+        color: #fd634e;
+        font-size: 0.8em;
+        padding: 10px 0;
+        font-weight: bold;
+      }
+      h2 {
+        color: #a2ca28;
+        font-size: 1.5em;
+        margin-bottom: 2em;
+      }
+      p {
+        color: #656e74;
+        font-size: 0.8em;
+        line-height: 1.5em;
+      }
+      a {
+        color: #9ece41;
+        text-decoration: none;
+        font-size: 0.7em;
+        margin-top: 20px;
+        font-weight: bold;
+        &:hover {
+          color: #577124;
+          text-shadow: 0 0 20px #577124;
+        }
+      }
+    }
+    .box8 {
+      background: #a2ca28;
+      padding: 60px;
+      color: #ffffff;
+      h2 {
+        font-size: 1.5em;
+        margin-bottom: 2em;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 0.8em;
+        line-height: 1.5em;
+      }
+    }
+    .box9 {
+      background: url(/img/Rectangle%203.png) no-repeat center top;
+      background-size: cover;
+    }
+    .box10 {
+      background: url(/img/Layer%2030.png) no-repeat center top;
+      background-size: cover;
+    }
+    .box11 {
+      background: #ffffff;
+      padding: 50px;
+      h4,
+      h2 {
+        text-transform: uppercase;
+      }
+      h4 {
+        color: #fd634e;
+        font-size: 0.8em;
+        padding: 10px 0;
+        font-weight: bold;
+      }
+      h2 {
+        color: #a2ca28;
+        font-size: 1.5em;
+        margin-bottom: 2em;
+      }
+      p {
+        color: #656e74;
+        font-size: 0.8em;
+        line-height: 1.5em;
+      }
+      img {
+        float: right;
+      }
+    }
+    .box12 {
+      background: #a2ca28;
+      padding: 50px;
+      color: #ffffff;
+      h2,
+      h4 {
+        text-transform: uppercase;
+      }
+      h2 {
+        font-size: 1.5em;
+        margin-bottom: 2em;
+      }
+      h4 {
+        font-size: 0.8em;
+        padding: 10px 0;
+        font-weight: bold;
+      }
+      p {
+        font-size: 0.8em;
+        line-height: 1.5em;
+      }
+      img {
+        float: right;
+      }
+    }
+    .clear {
+      clear: both;
+    }
+  }
+  }
+}
+//-------------------------------//photos---------------------------------------//
 //--------------------------------banner----------------------------------------//
+#banner{
+  background: url(/img/Layer%208.png) no-repeat center center;
+  background-size: cover;
+  .text{
+    text-align: center;
+    color:#ffffff;
+    padding: 400px 0;
+    h1{
+      font-size: 3em;
+      padding: 1em 0;
+    }
+    p{
+      font-size: 1em;
+      width: 50%;
+      margin: 0 auto;
+      line-height: 1.5em;
+    }
+  }
+}
 //-------------------------------//banner---------------------------------------//
 //--------------------------------footer----------------------------------------//
+footer {
+  background: #0d1119;
+  .footer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 0;
+    h4 {
+      color: #f4f4f4;
+      padding: 40px 0;
+      font-weight: bold;
+    }
+    p {
+      color: #677886;
+      font-size: 0.8em;
+      line-height: 1.3em;
+    }
+    .foo1 {
+      width: 33%;
+      padding: 10px 25px;
+      float: left;
+    }
+    .foo2 {
+      width: 34%;
+      padding: 10px 25px;
+      float: left;
+    }
+    .foo3 {
+      padding: 10px 0px;
+      width: 33%;
+      float: left;
+      .icons {
+        text-align: left;
+        i {
+          font-size: 1em;
+          padding: 1em;
+          color: #ffffff;
+          border-radius: 50%;
+          margin: 0 auto;
+        }
+        .fa-facebook-square {
+          background: #2e3192;
+          &:hover {
+            background: #1a1d89;
+          }
+        }
+        .fa-twitter {
+          background: #00aeef;
+          &:hover {
+            background: #236b86;
+          }
+        }
+        .fa-youtube-play {
+          background: #ed3123;
+          &:hover {
+            background: #911f17;
+          }
+        }
+        .fa-linkedin-square {
+          background: #171a8f;
+          &:hover {
+            background: #090a36;
+          }
+        }
+      }
+    }
+  }
+  .clear {
+    clear: both;
+  }
+  .newsletter {
+    padding: 100px 0px;
+    text-align: center;
+    input {
+      padding: 0.5em 1em;
+      border-radius: 5px;
+    }
+    #inp1 {
+      width: 25%;
+    }
+    #inp2 {
+      width: 30%;
+    }
+    #inp3 {
+      background: #a2ca28;
+      border: 0 solid #a2ca28;
+      color: #ffffff;
+      padding: 0.75em;
+      
+      &:hover {
+        background: #67801d;
+      }
+    }
+//    button {
+//      background: #a2ca28;
+//      color: #ffffff;
+//      padding: 13px 42px;
+//      border-radius: 5px;
+//      border: 0px solid black;
+//      span {
+//        margin-left: 0.5em;
+//      }
+//      &:hover {
+//        background: #67801d;
+//      }
+//    }
+  }
+}
 //-------------------------------//footer---------------------------------------//
 //--------------------------------Others----------------------------------------//
+.showw{
+  opacity: 1;
+}
+.hidee{
+  opacity: 0;
+}
 //-------------------------------//Others---------------------------------------//
+
+//-------------------------------//Media Query--------------------------------------- //
+@media all and (min-width:900px) and (max-width:1100px) {
+  body {
+    font-size: 18px;
+  }
+  #features {
+    .block1 {
+      .box {
+        width: 50%;
+        padding: 25px;
+        text-align: center;
+      }
+    }
+  }
+  #photos {
+    .photoBlock1 {
+      .bg1 {
+        .box1,
+        .box4 {
+          background: white;
+          padding: 20px;
+        }
+      }
+    }
+    .photoBlock2 {
+      .bg2 {
+        .box7,
+        .box8,
+        .box11,
+        .box12 {
+          padding: 20px;
+        }
+      }
+    }
+  }
+  #banner{
+    h1{
+      width: 70%;
+      margin: 0 auto;
+    }
+}
+}
+@media all and (min-width:600px) and (max-width:899px) {
+   body {
+    font-size: 16px;
+  }
+  #header{
+    .menu{
+      .nav{
+        .logo{
+          display: none;
+        }
+        .links{
+          a{
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  #features {
+    
+    .block1 {
+      width: 95%;
+      .box {
+        width: 50%;
+        padding: 25px;
+      }
+    }
+  }
+  #photos{
+    .photoBlock1{
+      .bg1{
+        width: 95%;
+        .box1, .box4{
+          padding: 20px 10px;
+        }
+      }
+    }
+    .photoBlock2{
+      .bg2{
+        width: 95%;
+        .box6{
+          .data {
+        #date,
+        #info {
+          padding: 40px 10px;
+        }
+          }
+      }
+        .box7, .box8{
+          padding: 40px 10px;
+        }
+        
+        .box11, .box12{
+          padding: 40px 20px;
+        }
+    }
+  }
+}
+  #banner{
+     h1{
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+}
+@media all and (max-width:599px){
+body {
+  font-size: 14px;
+  }
+  #header{
+    .menu{
+      .nav{
+        .logo{
+          float: left;
+        }
+        .links{
+          a{
+            font-weight: bold;
+            display: block;
+          }
+        }
+      }
+      .name{
+        img{
+          height: 30px;
+        }
+      }
+    }
+  }
+  #features {
+    padding: 40px 0;
+    .block1 {
+      width: 95%;
+      .box {
+        width: 100%;
+        padding: 10px 5px;
+        
+      }
+    }
+  }
+  #photos{
+    .photoBlock1{
+      .bg1{
+        width: 95%;
+        .box1, .box2, .box3, .box4{
+          padding: 20px 10px;
+          width: 100%;
+          height:auto;
+        }
+        .box2{
+          .sign{
+            position: relative;
+            top: 0;
+          }
+        }
+        .box3{
+          .sign{
+            position: relative;
+            top: 0;
+          }
+        }
+      }
+    }
+    .photoBlock2{
+      .bg2{
+        width: 95%;
+        .box6{
+          .data {
+        #date,
+        #info {
+          padding: 40px 10px;
+        }
+          }
+      }
+        .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12{
+          padding: 40px 20px;
+          width: 100%;
+          height: auto;
+          
+        }
+        
+    }
+  }
+}
+  #banner{
+    .text{
+      padding: 100px 0;
+    
+     h1{
+      width: 70%;
+      margin: 0 auto;
+    }
+    }
+  }
+  footer{
+    .footer{
+      width: 100%;
+     
+      padding: 30px 20px;
+      text-align: center;
+      h4{
+        padding: 20px 0;
+      }
+      .foo1, .foo2, .foo3{
+        width: 100%;
+      }
+      .foo3{
+        padding: 0px;
+      
+      .icons {
+        text-align: center;
+        
+      }
+    }
+  }
+}
+}
+
+
+//-------------------------------//Media Query---------------------------------------//
