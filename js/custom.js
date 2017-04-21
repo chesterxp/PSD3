@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    //smoothScroll
+    //----------------------------smoothScroll-------------
 		$('a').smoothScroll({
 		offset:10,
 		speed:600,
@@ -7,7 +7,7 @@ $(document).ready(function(){
   
     });
   
-  //viewportChecker
+  //------------------------viewportChecker---------------
   	$('*[data-animate]').addClass('hidee').each(function(){
       $(this).viewportChecker({
         classToAdd: 'showw animated ' + $(this).data('animate'),
@@ -16,7 +16,7 @@ $(document).ready(function(){
       });
     });
   
-  //-------
+  //--------------------------------------------------------
   
   
 });

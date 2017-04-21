@@ -505,7 +505,7 @@ footer {
     clear: both;
   }
   .newsletter {
-    padding: 100px 0px;
+    padding: 70px 0px;
     text-align: center;
     input {
       padding: 0.5em 1em;
@@ -593,6 +593,8 @@ footer {
       margin: 0 auto;
     }
 }
+
+
 }
 @media all and (min-width:600px) and (max-width:899px) {
    body {
@@ -601,8 +603,9 @@ footer {
   #header{
     .menu{
       .nav{
+        padding: 40px 15px;
         .logo{
-          display: none;
+          display: block;
         }
         .links{
           a{
@@ -658,6 +661,18 @@ footer {
       margin: 0 auto;
     }
   }
+  footer{
+      
+    .newsletter{
+      padding: 30px 0;
+        input{
+          display: block;
+          margin: 10px auto;
+          min-width: 40%;
+          
+        }
+      }
+  }
 }
 @media all and (max-width:599px){
 body {
@@ -689,7 +704,7 @@ body {
       width: 95%;
       .box {
         width: 100%;
-        padding: 10px 5px;
+        padding: 15px 40px;
         
       }
     }
@@ -701,7 +716,7 @@ body {
         .box1, .box2, .box3, .box4{
           padding: 20px 10px;
           width: 100%;
-          height:auto;
+          max-height:230px;
         }
         .box2{
           .sign{
@@ -731,7 +746,7 @@ body {
         .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12{
           padding: 40px 20px;
           width: 100%;
-          height: auto;
+          max-height:230px;
           
         }
         
@@ -768,9 +783,19 @@ body {
         
       }
     }
-  }
-}
-}
 
+  }
+    .newsletter{
+      padding: 30px 0;
+        input{
+          display: block;
+          margin: 10px auto;
+          min-width: 50%;
+          
+        }
+      }
+    
+}
+}
 
 //-------------------------------//Media Query---------------------------------------//
